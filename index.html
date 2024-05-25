@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+ 
   <link rel="stylesheet" href="style.css">
   <script src="index.js" defer></script>
 </head>
@@ -22,30 +27,28 @@
 
     <div class="weatherContainer">
 
-      <div class="grant-loaction-container">
+      <div class="sub-container grant-loaction-container">
         <img src="assets/location.png" alt="" width="80" height="80" loading="lazy">
         <p>Grant Location Access</p>
         <p>Allow Access To Get Infromation</p>
         <button class="btn" grant-access-btn>Grant Access</button>
       </div>
 
-      <div>
         <form action="" class="form-container" data-serachform>
           <input type="text" placeholder="Search For City...." data-SearchCity>
-          <button class="btn"><img src="./assets/search.png" alt="" width="20" height="20" loading="lazy"></button>
+          <button class="btn" type="submit"><img src="./assets/search.png" alt="" width="20" height="20" loading="lazy"></button>
         </form>
-      </div>
 
-      <div  class="loading-container">
+      <div  class="sub-container loading-container">
         <img src="./assets/loading.gif" alt="" width="150" height="150">
         <p>Loading</p>
       </div>
 
-      <div class="weather-info-container">
+      <div class="sub-container weather-info-container">
 
         <div class="name">
           <p data-cityName></p>
-          <img data-contryIcon>
+          <img data-countryIcon>
         </div>
 
         <p data-weatherDesc></p>
@@ -58,7 +61,7 @@
 
           <div class="parameter">
             <img src="./assets/wind.png" alt="">
-            <p>Winds Speed</p>
+            <p>WindSpeed</p>
             <p data-windsSpeed></p>
           </div>
 
